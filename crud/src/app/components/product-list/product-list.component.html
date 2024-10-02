@@ -1,0 +1,39 @@
+<div class="table-responsive  ">
+    <table class="table table-striped table-hover table-bordered  align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>ProductId</th>
+                <th>ProductName</th>
+                <th>ProductPrice</th>
+                <th>ProductDescription</th>
+                <th>ImagePath</th>
+                <th>CategoryName</th>
+                <th>Operation</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            @for (item of products; track item.productId) 
+            {
+                <tr>
+                    <td>{{item.productId}}</td>
+                    <td>{{item.productName}}</td>
+                    <td>{{item.productPrice}}</td>
+                    <td>{{item.productDescription}}</td>
+                    <td>{{item.imagePath}}</td>
+                    <td>{{item.categoryName}}</td>
+                    <td>
+                        <a class="btn btn-info" [routerLink]="['/product/details',item.productId]">Details</a> |
+                        <a class="btn btn-danger" [routerLink]="['/product/delete',item.productId]">Delete</a> |
+                        <a class="btn btn-light" [routerLink]="['/product/edit',item.productId]">Edit</a>
+
+
+                    </td>
+
+
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</div>
+<router-outlet></router-outlet>

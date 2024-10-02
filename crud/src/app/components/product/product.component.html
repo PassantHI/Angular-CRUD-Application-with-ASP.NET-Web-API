@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <div class="row p-2 " >
+        <div class="col-6">
+            <h3>Products</h3>
+        </div>
+        <div class="col-6 text-end">
+            <form class="d-flex" role="search">
+                <input name="KeyWord" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="key">
+                <button class="btn btn-success" type="submit" (click)="search()">Search</button>
+              </form>
+        </div>
+        
+    </div>
+</div>
+<a class="btn btn-primary" routerLink="/product/add">Add</a>
+<app-product-list [products]="products" ></app-product-list>
+<router-outlet></router-outlet>
+

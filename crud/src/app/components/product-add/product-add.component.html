@@ -1,0 +1,12 @@
+<div class="alert alert-success">
+    <strong>ADD Product</strong>
+    <br>
+    <input type="text" placeholder="name"  [(ngModel)]="newpro.productName"><br>
+    <input type="text" placeholder="price"  [(ngModel)]="newpro.productPrice"><br>
+    <input type="text" placeholder="Description"  [(ngModel)]="newpro.productDescription"><br>
+    <input type="text" placeholder="categoryId"  [(ngModel)]="newpro.productCategoryId"><br>
+    <input type="text" placeholder="stockQuantity"  [(ngModel)]="newpro.stockQuantity"><br>
+    <input type="text" placeholder="imagePath"  [(ngModel)]="newpro.imagePath"><br>
+    <button class="btn btn-success" (click)="save()">Add</button>
+
+</div>

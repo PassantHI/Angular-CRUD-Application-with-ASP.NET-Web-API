@@ -1,0 +1,24 @@
+<div>
+    <strong>Delete Product?</strong>
+    <strong>{{pro.productId}}</strong>
+    <br>
+    <strong>{{pro.productName}}</strong><br>
+    <strong>{{pro.productPrice}}</strong><br>
+    <strong>{{pro.productDescription}}</strong><br>
+    <strong>{{pro.categoryName}}</strong><br>
+    <strong>{{pro.imagePath}}</strong><br>
+    <a class="btn btn-dark" routerLink="/product"  >Back</a>
+</div>
+
+<div class="alert alert-success">
+    <strong>Edit Product</strong>
+    <br>
+    <input type="text" placeholder="name"  [(ngModel)]="newpro.productName"><br>
+    <input type="text" placeholder="price"  [(ngModel)]="newpro.productPrice"><br>
+    <input type="text" placeholder="Description"  [(ngModel)]="newpro.productDescription"><br>
+    <input type="text" placeholder="categoryId"  [(ngModel)]="newpro.productCategoryId"><br>
+    <input type="text" placeholder="stockQuantity"  [(ngModel)]="newpro.stockQuantity"><br>
+    <input type="text" placeholder="imagePath"  [(ngModel)]="newpro.imagePath"><br>
+    <button class="btn btn-success" (click)="edit()">Edit</button>
+
+</div>

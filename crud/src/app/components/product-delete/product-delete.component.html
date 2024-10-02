@@ -1,0 +1,12 @@
+<div>
+    <strong>Delete Product?</strong>
+    <strong>{{pro.productId}}</strong>
+    <br>
+    <strong>{{pro.productName}}</strong><br>
+    <strong>{{pro.productPrice}}</strong><br>
+    <strong>{{pro.productDescription}}</strong><br>
+    <strong>{{pro.categoryName}}</strong><br>
+    <strong>{{pro.imagePath}}</strong><br>
+    <a class="btn btn-dark" routerLink="/product"  >Back</a>
+    <a class="btn btn-danger" (click)="delete(pro.productId)" >Delete</a>
+</div>
