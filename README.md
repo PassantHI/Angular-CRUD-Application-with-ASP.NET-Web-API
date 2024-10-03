@@ -1,0 +1,1 @@
+Angular-based web application that interacts with an ASP.NET Web API to manage product data. The application supports displaying data in a table format, along with full CRUD operations, search, and filtering functionalities.
